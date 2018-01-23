@@ -1,5 +1,5 @@
 'use strict';
-function receiver(router, client, logger){
+function receiver(router, client){
   
   router.post('/receiveFromQuest', function(req, res) {
     console.log("req.body",req.body);
@@ -10,18 +10,18 @@ function receiver(router, client, logger){
       "altText": "this is a confirm template",
       "template": {
           "type": "confirm",
-          "text":  req.body.message,
+          "text":  req.body.overtime_reason,
           "actions": [
               {
                 "type": "postback",
                 "label": "Approve",
-                "text":  req.body.message,
+                "text":  req.body.overtime_reason,
                 "data": "processInstanceId="+req.body.process_id+"&key=sFCAYJMX1UokTLEOCOD42C5h1sbiPji4&q_replymsg=Yes"
               },
               {
                 "type": "postback",
                 "label": "Decline",
-                "text":  req.body.message,
+                "text":  req.body.overtime_reason,
                 "data": "processInstanceId="+req.body.process_id+"&key=sFCAYJMX1UokTLEOCOD42C5h1sbiPji4&q_replymsg=No"
                 
               }
@@ -33,7 +33,7 @@ function receiver(router, client, logger){
         client.pushMessage(lineId, message)
             .then(() => {
               // getting the message recieved from questetra and passing to line API 
-              console.log('The message: ', req.body.message, 'message has ben sent'); 
+              console.log('The message: ', req.body.overtime_reason, 'message has ben sent'); 
               // test save data
             })
             .catch((err) => {

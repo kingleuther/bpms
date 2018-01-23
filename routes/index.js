@@ -46,7 +46,7 @@ login(router);
 // success
 success(router);
 // receiver listener for line
-receiver(router, client, logger);
+receiver(router, client);
 // callback listener for line
 callback(router, axios, querystring, mongoose);
 // retrieve test data
