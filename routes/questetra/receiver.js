@@ -16,13 +16,13 @@ function receiver(router, client){
                 "type": "postback",
                 "label": "Approve",
                 "text":  req.body.overtime_reason,
-                "data": "processInstanceId="+req.body.process_id+"&key=NKOmgMAo36gnNvVnQwyKNojRwKh4gte0"
+                "data": "processInstanceId="+req.body.process_id+"&key=NKOmgMAo36gnNvVnQwyKNojRwKh4gte0&q_replymessage=yes"
               },
               {
                 "type": "postback",
                 "label": "Decline",
                 "text":  req.body.overtime_reason,
-                "data": "processInstanceId="+req.body.process_id+"&key=NKOmgMAo36gnNvVnQwyKNojRwKh4gte0"
+                "data": "processInstanceId="+req.body.process_id+"&key=NKOmgMAo36gnNvVnQwyKNojRwKh4gte0&q_replymessage=no"
                 
               }
           ]
