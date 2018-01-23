@@ -1,0 +1,15 @@
+{"level":"info","message":"test","timestamp":"2018-01-22T06:24:06.734Z"}
+{"processInstanceId":"200","message":"body","key":"sfsfsdfsdf","empEmail":"sdfjaksdjf@jskldfja.com","empID":"6","managerEmail":"aldunque@tmj.ph","level":"info","timestamp":"2018-01-22T06:24:06.740Z"}
+{"level":"info","message":"data saved","timestamp":"2018-01-22T06:24:06.932Z"}
+{"level":"info","message":"test","timestamp":"2018-01-22T06:25:12.478Z"}
+{"processInstanceId":"201","message":"body","key":"sfsfsdfsdf","empEmail":"sdfjaksdjf@jskldfja.com","empID":"6","managerEmail":"aldunque@tmj.ph","level":"info","timestamp":"2018-01-22T06:25:12.492Z"}
+{"level":"info","message":"data saved","timestamp":"2018-01-22T06:25:12.674Z"}
+{"level":"info","message":"test","timestamp":"2018-01-22T06:25:41.667Z"}
+{"processInstanceId":"201","message":"body","key":"sfsfsdfsdf","empEmail":"sdfjaksdjf@jskldfja.com","empID":"6","managerEmail":"test@tafsdfmj.ph","level":"info","timestamp":"2018-01-22T06:25:41.684Z"}
+{"level":"info","message":"data saved","timestamp":"2018-01-22T06:25:41.769Z"}
+{"level":"error","message":"User does not exist","timestamp":"2018-01-22T06:30:44.220Z"}
+{"level":"error","message":"User does not exist","timestamp":"2018-01-22T06:46:31.407Z"}
+{"level":"info","message":"test","timestamp":"2018-01-22T06:46:48.241Z"}
+{"processInstanceId":"202","message":"body","key":"sfsfsdfsdf","empEmail":"sdfjaksdjf@jskldfja.com","empID":"6","managerEmail":"aldunque@tmj.ph","level":"info","timestamp":"2018-01-22T06:46:48.249Z"}
+{"level":"info","message":"data saved","timestamp":"2018-01-22T06:46:48.436Z"}
+{"level":"error","message":"User does not exist","timestamp":"2018-01-22T06:58:20.262Z"}
