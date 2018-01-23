@@ -4,7 +4,8 @@ var replyURL = 'https://higashiyama-nanajo-812.questetra.net/System/Event/Interm
 function callback(router, axios, querystring, mongoose){
 	/*connection(mongoose);*/
     router.post('/callback', function(req, res) {
-        
+           console.log("postback",req.body.events[0].postback);
+           console.log("postback",req.body.events[0].message); 
     	if(req.body.events[0].postback != null && req.body.events[0].message == null){
             console.log("Start Sending");
             var parsedData = querystring.parse(req.body.events[0].postback.data);
@@ -18,7 +19,7 @@ function callback(router, axios, querystring, mongoose){
                 axios.post(replyURL,
                     querystring.stringify({
                         processInstanceId:parsedData.process_id,
-                        key:"sFCAYJMX1UokTLEOCOD42C5h1sbiPji4"
+                        key:"NKOmgMAo36gnNvVnQwyKNojRwKh4gte0"
                     }))
                     .then(function(response){
                             console.log('success');                
@@ -26,7 +27,7 @@ function callback(router, axios, querystring, mongoose){
                     .catch(function(error){
                             // console error here
                             console.log('failed');
-                            if(repeatCounter >= 10) return sendingReplyFailed();
+                            if(repeatCounter >= 10) return;
                             repeatCounter++;
                             console.log(repeatCounter);
                             resend();
