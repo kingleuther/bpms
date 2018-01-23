@@ -18,7 +18,7 @@ function callback(router, axios, querystring, mongoose){
             function callAxios(resend){
                 axios.post(replyURL,
                     querystring.stringify({
-                        processInstanceId:parsedData.process_id,
+                        processInstanceId:parsedData.processInstanceId,
                         key:"NKOmgMAo36gnNvVnQwyKNojRwKh4gte0"
                     }))
                     .then(function(response){
