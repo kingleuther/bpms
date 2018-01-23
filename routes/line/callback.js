@@ -4,8 +4,8 @@ var replyURL = 'https://higashiyama-nanajo-812.questetra.net/System/Event/Interm
 function callback(router, axios, querystring, mongoose){
 	/*connection(mongoose);*/
     router.post('/callback', function(req, res) {
-           console.log("postback",req.body.events[0].postback);
-           console.log("postback",req.body.events[0].message); 
+           console.log("callback body",req.body);
+           console.log("message",req.body.events[0].message); 
     	if(req.body.events[0].postback != null && req.body.events[0].message == null){
             console.log("Start Sending");
             var parsedData = querystring.parse(req.body.events[0].postback.data);
